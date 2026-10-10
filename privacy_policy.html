@@ -1,0 +1,120 @@
+from pathlib import Path
+
+html = r"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Bak Bak, a one-to-one voice calling app.">
+  <title>Privacy Policy — Bak Bak</title>
+  <style>
+    :root { color-scheme: light; --ink:#202124; --muted:#5f6368; --line:#e5e7eb; --paper:#ffffff; --soft:#f7f8fa; --accent:#315b52; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--soft); color:var(--ink); font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    header { background:var(--paper); border-bottom:1px solid var(--line); }
+    .wrap { width:min(860px, calc(100% - 36px)); margin:0 auto; }
+    .top { padding:30px 0 26px; }
+    .brand { font-size:14px; font-weight:750; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); }
+    h1 { margin:10px 0 4px; font-size:clamp(32px,5vw,44px); line-height:1.15; letter-spacing:-.035em; }
+    .updated { color:var(--muted); font-size:14px; }
+    main { background:var(--paper); margin:28px auto; padding:clamp(22px,5vw,46px); border:1px solid var(--line); border-radius:18px; }
+    h2 { margin:32px 0 8px; font-size:21px; line-height:1.3; }
+    h2:first-child { margin-top:0; }
+    p { margin:10px 0; }
+    ul { padding-left:24px; }
+    li { margin:6px 0; }
+    a { color:var(--accent); overflow-wrap:anywhere; }
+    .notice { border:1px solid #e6d8a8; background:#fffaf0; padding:14px 16px; border-radius:10px; color:#5e4b1d; font-size:14px; }
+    .placeholder { background:#fff3cd; padding:1px 4px; border-radius:4px; }
+    footer { color:var(--muted); font-size:13px; text-align:center; padding:0 0 28px; }
+    @media print { body { background:white; } main { border:0; margin:0; } .notice { display:none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <div class="brand">Bak Bak</div>
+      <h1>Privacy Policy</h1>
+      <div class="updated">Effective date: 10 October 2026</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="notice">
+      <strong>Before publishing:</strong> This is an editable starter policy. Replace every highlighted placeholder and remove any statement that does not match how Bak Bak actually works. In particular, confirm your call-audio handling, account data, analytics/SDKs, retention, and deletion process before making this page public.
+    </div>
+
+    <h2>1. About this policy</h2>
+    <p>This Privacy Policy explains how Bak Bak (“Bak Bak,” “we,” “us,” or “our”) handles information when you use our mobile application for direct, one-to-one voice calls with another person.</p>
+    <p>Bak Bak is operated by <span class="placeholder">[LEGAL NAME OR DEVELOPER / BUSINESS NAME]</span> (“the operator”). If you have questions about this policy, contact us at <a href="mailto:[PRIVACY CONTACT EMAIL]"><span class="placeholder">[PRIVACY CONTACT EMAIL]</span></a>.</p>
+
+    <h2>2. Information we handle</h2>
+    <p>The information handled by Bak Bak depends on the features you use and the services required to operate the app. Before publishing, keep only the categories that apply to your implementation.</p>
+    <ul>
+      <li><strong>Account and profile information:</strong> <span class="placeholder">[Describe whether users create accounts, and list the fields collected, such as username, email address, phone number, or profile photo.]</span></li>
+      <li><strong>Voice and microphone:</strong> Bak Bak requests microphone access so you can speak during a one-to-one call. <span class="placeholder">[Explain whether audio is transmitted live only, processed by a calling provider, recorded, stored, or reviewed. Do not claim that calls are never recorded unless this is verified.]</span></li>
+      <li><strong>Call and connection information:</strong> <span class="placeholder">[Describe any call timestamps, duration, connection diagnostics, matching identifiers, or call history that the app or its providers store.]</span></li>
+      <li><strong>Device and technical information:</strong> <span class="placeholder">[List device identifiers, operating-system/app version, IP address, crash logs, diagnostics, or other technical data actually collected.]</span></li>
+      <li><strong>Usage and analytics information:</strong> <span class="placeholder">[Name any analytics, crash-reporting, advertising, or measurement SDKs and explain the data they collect. If none are used, say so only after verifying.]</span></li>
+      <li><strong>Support and safety reports:</strong> <span class="placeholder">[Explain what information is collected when a user contacts support, blocks someone, or submits a report, if those features exist.]</span></li>
+    </ul>
+    <p>We do not ask you to provide information that is unnecessary for the app's stated functionality. Please avoid sharing sensitive personal information during calls.</p>
+
+    <h2>3. How we use information</h2>
+    <p>As applicable to the features you use, information may be used to:</p>
+    <ul>
+      <li>Provide and maintain Bak Bak and connect users for one-to-one voice calls.</li>
+      <li>Enable microphone and audio-call functionality.</li>
+      <li>Diagnose errors, maintain security, and improve reliability.</li>
+      <li>Respond to support requests and handle safety reports, if supported.</li>
+      <li>Meet legal obligations and protect users, the service, and our rights.</li>
+    </ul>
+    <p><span class="placeholder">[Add any other actual purposes, and remove purposes that do not apply.]</span></p>
+
+    <h2>4. How information is shared</h2>
+    <p>We may share information only as needed for the app to operate, where required by law, or as otherwise explained here. Complete this section to reflect your actual setup:</p>
+    <ul>
+      <li><strong>Service providers:</strong> <span class="placeholder">[Name the backend, voice-calling/RTC provider, hosting provider, analytics provider, and other processors that receive user data.]</span></li>
+      <li><strong>Other users:</strong> <span class="placeholder">[Explain what another caller can see or learn about a user, such as display name or profile details.]</span></li>
+      <li><strong>Legal and safety matters:</strong> We may disclose information when we reasonably believe disclosure is legally required or necessary to address security, fraud, or safety concerns.</li>
+      <li><strong>Business changes:</strong> <span class="placeholder">[State whether information could be transferred as part of a merger, acquisition, or asset transfer.]</span></li>
+    </ul>
+    <p><span class="placeholder">[Confirm whether personal information is sold, shared for targeted advertising, or used for advertising profiles. Do not publish a claim until verified.]</span></p>
+
+    <h2>5. Storage, security, and retention</h2>
+    <p>We use reasonable technical and organizational measures designed to protect information. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+    <p><span class="placeholder">[Explain where data is hosted, how long account data, logs, reports, and call-related records are retained, and when/how they are deleted. Specify whether call audio is ever stored.]</span></p>
+
+    <h2>6. Your choices and data rights</h2>
+    <ul>
+      <li><strong>Microphone permission:</strong> You can manage microphone permission in your device settings. Without it, voice calling may not work.</li>
+      <li><strong>Account and data requests:</strong> You may contact us to request access to, correction of, or deletion of personal information, subject to applicable law.</li>
+      <li><strong>Notifications and other permissions:</strong> <span class="placeholder">[Describe how users can manage any other permissions or optional data collection.]</span></li>
+    </ul>
+    <p>To make a privacy request, email <a href="mailto:[PRIVACY CONTACT EMAIL]"><span class="placeholder">[PRIVACY CONTACT EMAIL]</span></a>. We may need to verify your request before acting on it.</p>
+    <p><span class="placeholder">[If accounts can be created, explain the exact in-app and/or web process for requesting account deletion, including any applicable timeline and exceptions.]</span></p>
+
+    <h2>7. Children's privacy</h2>
+    <p><span class="placeholder">[State the app's minimum age and whether it is intended for children. Describe the steps taken if you learn that information was collected from a child in violation of applicable requirements.]</span></p>
+
+    <h2>8. International data transfers</h2>
+    <p><span class="placeholder">[Explain whether information is processed outside the user's country and what safeguards apply, if relevant.]</span></p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this Privacy Policy as Bak Bak changes. When we do, we will update the effective date on this page. Where required, we will provide additional notice or obtain consent for material changes.</p>
+
+    <h2>10. Contact us</h2>
+    <p>For questions, concerns, or privacy requests, contact:</p>
+    <p><strong><span class="placeholder">[LEGAL NAME OR DEVELOPER / BUSINESS NAME]</span></strong><br>
+      Email: <a href="mailto:[PRIVACY CONTACT EMAIL]"><span class="placeholder">[PRIVACY CONTACT EMAIL]</span></a><br>
+      Address: <span class="placeholder">[BUSINESS OR CONTACT ADDRESS, IF REQUIRED]</span>
+    </p>
+  </main>
+  <footer class="wrap">© 2026 Bak Bak. All rights reserved.</footer>
+</body>
+</html>
+"""
+
+path = Path("/mnt/data/bak_bak_privacy_policy.html")
+path.write_text(html, encoding="utf-8")
+print(f"Created privacy policy page: {path}")
